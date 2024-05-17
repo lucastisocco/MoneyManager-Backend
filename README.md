@@ -1,3 +1,3 @@
 # MoneyManager-Backend
 
-Este repositorio contiene el backend de la aplicación Money Manager.
+Backend para la aplicación Money Manager. TP Desarrollo de Software 2024. Lucas Tisocco - Santiago Martínez.
