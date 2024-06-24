@@ -1,0 +1,36 @@
+### obtener todas las categories
+GET http://localhost:3000/api/categories
+
+### obtener una category
+GET http://localhost:3000/api/categories/C002
+
+### crear nueva category
+POST http://localhost:3000/api/categories
+Content-Type: application/json
+
+{
+  "id": "C002",
+  "name": "Comida",
+  "description": "Gastos destinados a comestibles y alimentos"
+}
+
+### modificar una category (PUT - recurso completo e idempotente)
+PUT http://localhost:3000/api/categories/C002
+Content-Type: application/json
+
+{
+  "id": "C003",
+  "name": "Salud",
+  "description": "Destinado a gastos en farmacias y atencion medica"
+}
+
+### modificar una category (PATCH - recurso parcial)
+PATCH http://localhost:3000/api/categories/C003
+Content-Type: application/json
+
+{
+  "description": "Gastos en medicamentos y obra social"
+}
+
+###borrar una category
+DELETE http://localhost:3000/api/categories/C003
