@@ -19,12 +19,13 @@ PUT http://localhost:3000/api/categories/C002
 Content-Type: application/json
 
 {
+  "id": "C003",
   "name": "Salud",
   "description": "Destinado a gastos en farmacias y atencion medica"
 }
 
 ### modificar una category (PATCH - recurso parcial)
-PATCH http://localhost:3000/api/categories/C002
+PATCH http://localhost:3000/api/categories/C003
 Content-Type: application/json
 
 {
@@ -32,4 +33,4 @@ Content-Type: application/json
 }
 
 ###borrar una category
-DELETE http://localhost:3000/api/categories/C002
+DELETE http://localhost:3000/api/categories/C003
